@@ -23,4 +23,19 @@ JOptionPane.showMessageDialog(null, "El texto ingresado es: "+ax);
           }
           JOptionPane.showMessageDialog(null,"el texto\n"+ax+"contiene\n"+cont2+"\n"+"vocales");   
       }
+
+    void buscar_consonantes() {
+         int cont1 = 0,cont2=0,consonant;
+          for (int i=0;i<ax.length();i++){
+
+             cont1++;
+          }
+          for (int i=0;i<ax.length();i++){
+              if ((ax.charAt(i)=='a')|| (ax.charAt(i)=='e')||(ax.charAt(i)=='i')||(ax.charAt(i)=='o')||(ax.charAt(i)=='u')){
+                cont2++;
+              }
+          }
+          consonant=cont1-cont2;
+           JOptionPane.showMessageDialog(null,"el texto"+ax+"contiene\n"+consonant+"\n"+"consonantes");
+    }
 }
